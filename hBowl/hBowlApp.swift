@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct hBowlApp: App {
+    
+    @StateObject var vm = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .environmentObject(vm)
+                .navigationBarTitle("HudBowl")
         }
     }
 }
