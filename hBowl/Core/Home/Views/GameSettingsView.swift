@@ -152,7 +152,7 @@ struct GameSettingsView: View {
         Button("Ready To Play") {
             showingGameView.toggle()
         }
-        .disabled( vm.teams.map({ $0.players.count }).reduce(0, +) < 2 )
+        .disabled( vm.teams.map({ $0.players.count }).reduce(0, +) < 4 )
         .fullScreenCover(isPresented: $showingGameView, content: {
             GameView(gameTime: Int(gameTime) ?? 60).environmentObject(vm)
         })

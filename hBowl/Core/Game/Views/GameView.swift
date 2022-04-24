@@ -144,6 +144,7 @@ struct GameView: View {
         if currentRound > 1 {
             endGame()
         } else {
+            playSound(sound: "Bell", type: "mp3")
             gameState = .notRunning
             currentRound += 1
             allQuestions.insert(contentsOf: answeredQuestions, at: 0)

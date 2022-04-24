@@ -10,11 +10,14 @@ import SwiftUI
 @main
 struct hBowlApp: App {
     
+    // Store Manager object to make In App Purchases
+    @StateObject var storeManager = StoreManager()
+    
     @StateObject var vm = HomeViewModel()
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            HomeView(storeManager: storeManager)
                 .environmentObject(vm)
                 .navigationBarTitle("HudBowl")
         }

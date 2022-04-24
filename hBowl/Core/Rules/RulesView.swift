@@ -10,8 +10,11 @@ import SwiftUI
 struct RulesView: View {
     var body: some View {
         ZStack {
-            VStack {
-                List {
+            VStack(alignment: .leading) {
+                Text("Game Play")
+                    .font(.title)
+                    .bold()
+                Form {
 
                     Section(header: Text("About")) {
                         VStack(alignment: .leading) {
@@ -36,16 +39,14 @@ struct RulesView: View {
                     }
                 }
             }
+            .padding()
         }
     }
 }
 
 struct RulesView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            RulesView()
-                .navigationTitle("HudBowl")
-        }
-        
+        RulesView()
     }
 }
+

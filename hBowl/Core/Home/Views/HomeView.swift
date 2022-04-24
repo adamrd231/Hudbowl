@@ -11,6 +11,9 @@ struct HomeView: View {
     // Data
     @EnvironmentObject var vm: HomeViewModel
     
+    // Store manager variable for in-app purchases
+    @State var storeManager: StoreManager
+    
     // Navigation
     @State var viewingGameScreen: Bool = false
     
@@ -55,29 +58,23 @@ struct HomeView: View {
                 
             }
             
-            VStack {
-                Text("Admob")
-            }
-            .tabItem {
-                tabItemAdmobView
-            }
+//            InAppStorePurchasesView(storeManager: storeManager)
+//            .tabItem {
+//                tabItemAdmobView
+//            }
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            HomeView().environmentObject(HomeViewModel())
-        }
-       
+        HomeView(storeManager: StoreManager()).environmentObject(HomeViewModel())
+
     }
 }
 
 
 extension HomeView {
-    
-    
     
     // MARK: Main Screen Views
     var homeView: some View {
@@ -86,8 +83,8 @@ extension HomeView {
             SwimmingFishView()
     
             VStack {
-                Text("Hud-Bowl!")
-                    .font(.title)
+                Text("HudBowl!")
+                    .font(.largeTitle)
                     .foregroundColor(Color.theme.textWithBackground)
                     .fontWeight(.heavy)
                     .padding()
@@ -124,7 +121,7 @@ extension HomeView {
     var tabItemRulesView: some View {
         VStack {
             Image(systemName: "menubar.rectangle")
-            Text("Explain")
+            Text("Hot to Play")
         }
     }
     

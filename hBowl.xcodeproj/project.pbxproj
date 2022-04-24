@@ -3,13 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6637F74028106E6C00A7DE84 /* LinearGradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637F73F28106E6C00A7DE84 /* LinearGradientBackgroundView.swift */; };
 		6637F74228111F9E00A7DE84 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637F74128111F9E00A7DE84 /* EndOfGameView.swift */; };
 		6637F7442811275100A7DE84 /* SwimmingFishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637F7432811275100A7DE84 /* SwimmingFishView.swift */; };
+		6637F74728112CD400A7DE84 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637F74628112CD400A7DE84 /* StoreManager.swift */; };
+		6637F74928112D0900A7DE84 /* InAppStorePurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637F74828112D0900A7DE84 /* InAppStorePurchaseView.swift */; };
+		6637F74C28112E8300A7DE84 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637F74B28112E8300A7DE84 /* PlaySound.swift */; };
+		6637F74E28112EDC00A7DE84 /* Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6637F74D28112EDC00A7DE84 /* Bell.mp3 */; };
+		6637F7502812040B00A7DE84 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637F74F2812040B00A7DE84 /* BannerView.swift */; };
 		6664B55E280DC3A90045E6F1 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664B55D280DC3A90045E6F1 /* RulesView.swift */; };
 		66AFC1DA28050A6700CB0B1F /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AFC1D928050A6700CB0B1F /* PreviewProvider.swift */; };
 		66EADD1A27EF9FD500F67168 /* hBowlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EADD1927EF9FD500F67168 /* hBowlApp.swift */; };
@@ -23,12 +28,19 @@
 		66EADD3827F4D11400F67168 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EADD3727F4D11400F67168 /* GameView.swift */; };
 		66EADD3E27FBF5EC00F67168 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EADD3D27FBF5EC00F67168 /* GameViewModel.swift */; };
 		66EADD4127FD37D100F67168 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EADD4027FD37D100F67168 /* Color.swift */; };
+		76DFAE247E979B7A66A7A37B /* Pods_hBowl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343A77D6A42E05EA4F3BDEA3 /* Pods_hBowl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		343A77D6A42E05EA4F3BDEA3 /* Pods_hBowl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hBowl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6637F73F28106E6C00A7DE84 /* LinearGradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientBackgroundView.swift; sourceTree = "<group>"; };
 		6637F74128111F9E00A7DE84 /* EndOfGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfGameView.swift; sourceTree = "<group>"; };
 		6637F7432811275100A7DE84 /* SwimmingFishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmingFishView.swift; sourceTree = "<group>"; };
+		6637F74628112CD400A7DE84 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		6637F74828112D0900A7DE84 /* InAppStorePurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppStorePurchaseView.swift; sourceTree = "<group>"; };
+		6637F74B28112E8300A7DE84 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		6637F74D28112EDC00A7DE84 /* Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bell.mp3; sourceTree = "<group>"; };
+		6637F74F2812040B00A7DE84 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		6664B55D280DC3A90045E6F1 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
 		66AFC1D928050A6700CB0B1F /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		66EADD1627EF9FD500F67168 /* hBowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hBowl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +56,8 @@
 		66EADD3727F4D11400F67168 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		66EADD3D27FBF5EC00F67168 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		66EADD4027FD37D100F67168 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		97664F09D27D30CF14451FB3 /* Pods-hBowl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hBowl.debug.xcconfig"; path = "Target Support Files/Pods-hBowl/Pods-hBowl.debug.xcconfig"; sourceTree = "<group>"; };
+		AC7DB567B5ECB8574D6DD485 /* Pods-hBowl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hBowl.release.xcconfig"; path = "Target Support Files/Pods-hBowl/Pods-hBowl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +65,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76DFAE247E979B7A66A7A37B /* Pods_hBowl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CA01A80679A6E63B62A93C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				343A77D6A42E05EA4F3BDEA3 /* Pods_hBowl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6637F74528112CBB00A7DE84 /* Monetizing */ = {
+			isa = PBXGroup;
+			children = (
+				6637F74628112CD400A7DE84 /* StoreManager.swift */,
+				6637F74828112D0900A7DE84 /* InAppStorePurchaseView.swift */,
+				6637F74F2812040B00A7DE84 /* BannerView.swift */,
+			);
+			path = Monetizing;
+			sourceTree = "<group>";
+		};
+		6637F74A28112E7300A7DE84 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6637F74B28112E8300A7DE84 /* PlaySound.swift */,
+				6637F74D28112EDC00A7DE84 /* Bell.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		6664B55C280DC39E0045E6F1 /* Rules */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +112,8 @@
 			children = (
 				66EADD1827EF9FD500F67168 /* hBowl */,
 				66EADD1727EF9FD500F67168 /* Products */,
+				7B9F57B2ECFC509D557ECEAA /* Pods */,
+				5CA01A80679A6E63B62A93C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +130,8 @@
 			children = (
 				66EADD1927EF9FD500F67168 /* hBowlApp.swift */,
 				66EADD3F27FD37C900F67168 /* Extensions */,
+				6637F74528112CBB00A7DE84 /* Monetizing */,
+				6637F74A28112E7300A7DE84 /* Sounds */,
 				66EADD2927EF9FE100F67168 /* Core */,
 				66EADD2827EF9FDA00F67168 /* Models */,
 				66EADD1D27EF9FD600F67168 /* Assets.xcassets */,
@@ -193,6 +239,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7B9F57B2ECFC509D557ECEAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97664F09D27D30CF14451FB3 /* Pods-hBowl.debug.xcconfig */,
+				AC7DB567B5ECB8574D6DD485 /* Pods-hBowl.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66EADD2527EF9FD600F67168 /* Build configuration list for PBXNativeTarget "hBowl" */;
 			buildPhases = (
+				606EAF69A7C8B6DB7DE59801 /* [CP] Check Pods Manifest.lock */,
 				66EADD1227EF9FD500F67168 /* Sources */,
 				66EADD1327EF9FD500F67168 /* Frameworks */,
 				66EADD1427EF9FD500F67168 /* Resources */,
+				E4FA31FF369259D534766D28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,12 +307,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6637F74E28112EDC00A7DE84 /* Bell.mp3 in Resources */,
 				66EADD2127EF9FD600F67168 /* Preview Assets.xcassets in Resources */,
 				66EADD1E27EF9FD600F67168 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		606EAF69A7C8B6DB7DE59801 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hBowl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FA31FF369259D534766D28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hBowl/Pods-hBowl-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hBowl/Pods-hBowl-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hBowl/Pods-hBowl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66EADD1227EF9FD500F67168 /* Sources */ = {
@@ -266,6 +366,7 @@
 				6637F74028106E6C00A7DE84 /* LinearGradientBackgroundView.swift in Sources */,
 				66EADD2B27EF9FFA00F67168 /* GameModels.swift in Sources */,
 				6637F7442811275100A7DE84 /* SwimmingFishView.swift in Sources */,
+				6637F74928112D0900A7DE84 /* InAppStorePurchaseView.swift in Sources */,
 				66EADD1A27EF9FD500F67168 /* hBowlApp.swift in Sources */,
 				66EADD2F27EFA71E00F67168 /* GameSettingsView.swift in Sources */,
 				6637F74228111F9E00A7DE84 /* EndOfGameView.swift in Sources */,
@@ -274,8 +375,11 @@
 				66EADD2D27EFA58600F67168 /* HomeViewModel.swift in Sources */,
 				66EADD3427F2351800F67168 /* TeamView.swift in Sources */,
 				66EADD3827F4D11400F67168 /* GameView.swift in Sources */,
+				6637F74728112CD400A7DE84 /* StoreManager.swift in Sources */,
+				6637F7502812040B00A7DE84 /* BannerView.swift in Sources */,
 				66EADD4127FD37D100F67168 /* Color.swift in Sources */,
 				66AFC1DA28050A6700CB0B1F /* PreviewProvider.swift in Sources */,
+				6637F74C28112E8300A7DE84 /* PlaySound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +421,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -378,6 +483,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -400,6 +506,7 @@
 		};
 		66EADD2627EF9FD600F67168 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97664F09D27D30CF14451FB3 /* Pods-hBowl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -413,7 +520,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = design.rdConcepts.hBowl;
+				PRODUCT_BUNDLE_IDENTIFIER = design.rdconcepts.hudbowl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,6 +529,7 @@
 		};
 		66EADD2727EF9FD600F67168 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC7DB567B5ECB8574D6DD485 /* Pods-hBowl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -435,7 +543,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = design.rdConcepts.hBowl;
+				PRODUCT_BUNDLE_IDENTIFIER = design.rdconcepts.hudbowl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -71,7 +71,7 @@ struct EndOfGameView: View {
                         ForEach(vm.teams[0].players) { player in
                             HStack {
                                 Text("\(player.name)")
-                                Spacer()
+                            
                                 Text("\(player.individualScore)")
                             }
                         }
@@ -89,7 +89,7 @@ struct EndOfGameView: View {
                             .fontWeight(.bold)
           
                         ForEach(vm.teams[1].players) { player in
-                            HStack {
+                            HStack() {
                                 Text("\(player.name)")
                                 Spacer()
                                 Text("\(player.individualScore)")
